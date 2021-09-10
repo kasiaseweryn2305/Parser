@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/kasia/Projects/Parser/Parser/Parser.csproj": {}
+    "/Users/kasia/Desktop/Parser/Parser/Parser.csproj": {}
   },
   "projects": {
-    "/Users/kasia/Projects/Parser/Parser/Parser.csproj": {
+    "/Users/kasia/Desktop/Parser/Parser/Parser.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kasia/Projects/Parser/Parser/Parser.csproj",
+        "projectUniqueName": "/Users/kasia/Desktop/Parser/Parser/Parser.csproj",
         "projectName": "Parser",
-        "projectPath": "/Users/kasia/Projects/Parser/Parser/Parser.csproj",
+        "projectPath": "/Users/kasia/Desktop/Parser/Parser/Parser.csproj",
         "packagesPath": "/Users/kasia/.nuget/packages/",
-        "outputPath": "/Users/kasia/Projects/Parser/Parser/obj/",
+        "outputPath": "/Users/kasia/Desktop/Parser/Parser/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/kasia/.config/NuGet/NuGet.Config"
