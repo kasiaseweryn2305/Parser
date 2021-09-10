@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/kasia/.dotnet/store/|arch|/|tfm|",
+      "/Users/kasia/.nuget/packages"
+    ]
+  }
+}

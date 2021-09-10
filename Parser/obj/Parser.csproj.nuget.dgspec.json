@@ -1,0 +1,69 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/kasia/Projects/Parser/Parser/Parser.csproj": {}
+  },
+  "projects": {
+    "/Users/kasia/Projects/Parser/Parser/Parser.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/kasia/Projects/Parser/Parser/Parser.csproj",
+        "projectName": "Parser",
+        "projectPath": "/Users/kasia/Projects/Parser/Parser/Parser.csproj",
+        "packagesPath": "/Users/kasia/.nuget/packages/",
+        "outputPath": "/Users/kasia/Projects/Parser/Parser/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/kasia/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "BlazorInputFile": {
+              "target": "Package",
+              "version": "[0.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

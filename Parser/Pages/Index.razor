@@ -1,7 +1,61 @@
-﻿@page "/"
+@page "/"
+@using Parser.Services
+@using Parser.Data
+@inject IFileOperations fileOperations
 
-<h1>Hello, world!</h1>
+<h1>Welcome to text file parsing app</h1>
 
-Welcome to your new app.
+<br>
+<br>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+<h4>Upload txt file to parse:</h4>
+<InputFile OnChange="HandleFileSelected" />
+
+@if (file != null)
+{
+
+    @if (fileContent != null)
+    {
+        <span> <br><br> Parsed file content: <br><br> @parsedFileContent </span>
+    }
+    @if (file.Type != "text/plain")
+    {
+        <span><br>Incorrect file format! <br> </span>
+    }
+    @if (file.Size > 3145728)
+    {
+        <span> Size of file too big! </span>
+    }
+
+}
+
+
+
+@code {
+    IFileListEntry file;
+    String fileContent;
+    String parsedFileContent;
+
+    async Task HandleFileSelected(IFileListEntry[] files)
+    {
+        file = files.FirstOrDefault();
+        if (file != null && file.Type == "text/plain" && file.Size <= 3145728)  //3145728 = 3MiB
+        {
+            await fileOperations.Upload(file);
+
+            fileContent = fileOperations.Read(file);
+            var result = fileOperations.Parse(fileContent);
+            if (result.StartsWith(Constants.ERROR))
+
+                fileOperations.Write(file, parsedFileContent);
+
+            parsedFileContent = result;
+        }
+
+    }
+    void GetFileContent()
+    {
+        fileContent = fileOperations.Read(file);
+    }
+
+}
